@@ -445,6 +445,8 @@ void CardReader::printSelectedFilename() {
 }
 
 void CardReader::mount() {
+  DEBUG_ECHOLNPGM("CardReader::mount());
+
   flag.mounted = false;
   if (root.isOpen()) root.close();
 
@@ -471,6 +473,7 @@ void CardReader::mount() {
   }
 
   ui.refresh();
+  DEBUG_ECHOLNPGM("end CardReader::mount());
 }
 
 /**
