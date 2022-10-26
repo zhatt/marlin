@@ -24,7 +24,7 @@
 
 #if ENABLED(SDSUPPORT)
 
-//#define DEBUG_CARDREADER
+#define DEBUG_CARDREADER
 
 #include "cardreader.h"
 
